@@ -236,7 +236,86 @@ namespace le_cantine
             }
         }
 
+        public static DataTable GetAllTables()
+        {
+            return SelectDatatable("SELECT Id_Table, Numero, Capapcite, Statut FROM Tables");
+        }
 
+        public static int CreateTable(string numero, string capacite, string statut)
+        {
+            try
+            {
+                maConnexion.Open();
+                string requete = "INSERT INTO Tables (Id_Table, Numero, Capapcite, Statut) VALUES (UUID(), @Numero, @Capapcite, @Statut)";
+                MySqlCommand cmd = new MySqlCommand(requete, maConnexion);
+                cmd.Parameters.AddWithValue("@Numero", numero);
+                cmd.Parameters.AddWithValue("@Capapcite", capacite);
+                cmd.Parameters.AddWithValue("@Statut", statut);
+
+                int result = cmd.ExecuteNonQuery();
+                return result;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Erreur SQL : " + ex.Message);
+                return 0;
+            }
+            finally
+            {
+                maConnexion.Close();
+            }
+        }
+
+
+        public static void UpdateTable(string id, string numero, string capacite, string statut)
+        {
+            try
+            {
+                maConnexion.Open();
+                string query = @"UPDATE Tables
+                         SET Numero = @Numero,
+                             Capapcite = @Capapcite,
+                             Statut = @Statut
+                         WHERE Id_Table = @Id_Table";
+
+                MySqlCommand cmd = new MySqlCommand(query, maConnexion);
+                cmd.Parameters.AddWithValue("@Id_Table", id);
+                cmd.Parameters.AddWithValue("@Numero", numero);
+                cmd.Parameters.AddWithValue("@Capapcite", capacite);
+                cmd.Parameters.AddWithValue("@Statut", statut);
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Erreur SQL : " + ex.Message);
+            }
+            finally
+            {
+                maConnexion.Close();
+            }
+        }
+
+
+        public static void DeleteTable(string id)
+        {
+            try
+            {
+                maConnexion.Open();
+                string query = "DELETE FROM Tables WHERE Id_Table = @id";
+                MySqlCommand cmd = new MySqlCommand(query, maConnexion);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Erreur SQL : " + ex.Message);
+            }
+            finally
+            {
+                maConnexion.Close();
+            }
+        }
 
 
 

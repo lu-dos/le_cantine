@@ -35,3 +35,4 @@ C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_ca
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.csproj.Up2Date
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.ConnectAdmin.resources
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.ConnectUser.resources
+C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.Properties.Resources.resources
