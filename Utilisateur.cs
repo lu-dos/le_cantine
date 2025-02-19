@@ -46,7 +46,7 @@ namespace le_cantine
         {
                 string requete = $"UPDATE Utilisateur SET Nom = '{nom}', Email = '{email}',  MotDePasse = '{mdp}', Role = '{role}' WHERE Id_Utilisateur = '{Id_Utilisateur}'";
 
-                int result = BDD.ExecuteQuery(requete);
+                BDD.ExecuteQuery(requete);
         }
 
 
@@ -85,10 +85,8 @@ namespace le_cantine
 
         public static void DeleteUser(string Id_Utilisateur)
         {
-
-                string requete = $"DELETE FROM Utilisateur WHERE Id_Utilisateur = '{Id_Utilisateur}'";
-
-                int result = BDD.ExecuteQuery(requete);
+            string requete = $"DELETE FROM Utilisateur WHERE Id_Utilisateur = '{Id_Utilisateur}'";
+            BDD.ExecuteQuery(requete);
         }
 
 

@@ -85,7 +85,7 @@ namespace le_cantine
 
                 if (result == DialogResult.Yes)
                 {
-                    BDD.DeleteUser(id);
+                    Utilisateur.DeleteUser(id);
                     MessageBox.Show("Utilisateur supprimé !");
                     LoadUsers(); // Recharge les données
                 }
@@ -169,7 +169,7 @@ namespace le_cantine
                     return;
                 }
 
-                BDD.UpdateTable(id, numero, capacite, statut);
+                Tables.UpdateTable(id, numero, capacite, statut);
                 MessageBox.Show("Table modifiée avec succès !");
                 LoadTables(); // Recharge les données
             }
@@ -190,7 +190,7 @@ namespace le_cantine
 
                 if (result == DialogResult.Yes)
                 {
-                    BDD.DeleteTable(id);
+                    Tables.DeleteTable(id);
                     MessageBox.Show("Table supprimée !");
                     LoadTables(); // Recharge les données
                 }
@@ -217,7 +217,7 @@ namespace le_cantine
                 }
 
                 // Ajout dans la BDD
-                int result = BDD.CreateTable(numero, capacite, statut);
+                int result = Tables.CreateTable(numero, capacite, statut);
 
                 if (result > 0)
                 {
