@@ -41,6 +41,7 @@
             dataGridViewTables = new DataGridView();
             TabCommandes = new TabPage();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
             tabControl1.SuspendLayout();
             TabModifUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
@@ -186,6 +187,7 @@
             // 
             // TabCommandes
             // 
+            TabCommandes.Controls.Add(button1);
             TabCommandes.Controls.Add(dataGridView1);
             TabCommandes.Location = new Point(4, 38);
             TabCommandes.Name = "TabCommandes";
@@ -203,6 +205,15 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(941, 659);
             dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(1068, 86);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // ConnectAdmin
             // 
@@ -238,5 +249,6 @@
         private Button btnSupprimerTable;
         private Button btnAjouterTable;
         private DataGridView dataGridView1;
+        private Button button1;
     }
 }

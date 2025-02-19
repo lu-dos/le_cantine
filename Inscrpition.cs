@@ -15,17 +15,17 @@ namespace le_cantine
         public Inscription()
         {
             InitializeComponent();
-            BDD.GetConnexion();
+            BDD.GetConnection();
         }
 
         private void BtnValider_Click(object sender, EventArgs e)
         {
 
             // Vérifier si aucun des champs n'est vide
-            if (BDD.ValidateTextBoxes(TxtbNom, TxtbMdp, TxtbEmail) && BDD.ValidateComboBoxes(CbGrade))
+            if (Utilisateur.ValidateTextBoxes(TxtbNom, TxtbMdp, TxtbEmail) && Utilisateur.ValidateComboBoxes(CbGrade))
             {
                 // Vérifier si le nom d'utilisateur ou l'email existe déjà
-                if (BDD.UserExistDeja(TxtbNom.Text, TxtbEmail.Text))
+                if (Utilisateur.UserExistDeja(TxtbEmail.Text, TxtbMdp.Text))
                 {
                     // Un message s'affiche si le nom d'utilisateur ou l'email existe déjà
                     MessageBox.Show("Le nom d'utilisateur ou l'email existe déjà. Veuillez en choisir un autre.");
@@ -33,7 +33,7 @@ namespace le_cantine
                 else
                 {
                     // Procéder avec la création de l'utilisateur si tous les champs sont remplis et si l'utilisateur n'existe pas
-                    int result = BDD.CreateUser(TxtbNom.Text, TxtbMdp.Text, TxtbEmail.Text, CbGrade.Text);
+                    int result = Utilisateur.CreateUser(TxtbNom.Text, TxtbMdp.Text, TxtbEmail.Text, CbGrade.Text);
 
                     // Vérifier le résultat de la création de l'utilisateur
                     if (result > 0)

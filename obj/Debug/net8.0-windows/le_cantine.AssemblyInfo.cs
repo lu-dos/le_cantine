@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("le_cantine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b28abf6d0166ecd4a8d05a19029ea6c4598f94e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+106d46ddcdc906054d702ab80519f6b6401bca8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("le_cantine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("le_cantine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

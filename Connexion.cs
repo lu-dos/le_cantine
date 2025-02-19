@@ -5,7 +5,7 @@ namespace le_cantine
         public Connexion()
         {
             InitializeComponent();
-            BDD.GetConnexion();
+            BDD.GetConnection();
         }
 
         private void label1_Click(object sender, EventArgs e)

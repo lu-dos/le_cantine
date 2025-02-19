@@ -16,7 +16,7 @@ namespace le_cantine
         public ConnectAdmin()
         {
             InitializeComponent();
-            BDD.GetConnexion();
+            BDD.GetConnection();
             LoadUsers();
             LoadTables();
         }
@@ -45,7 +45,7 @@ namespace le_cantine
         {
             try
             {
-                DataTable dt = BDD.GetAllUsers(); // Récupère tous les utilisateurs depuis la BDD
+                DataTable dt = Utilisateur.GetAllUsers(); // Récupère tous les utilisateurs depuis la BDD
                 dataGridViewUsers.DataSource = dt; // Lier les données au DataGridView
             }
             catch (Exception ex)
@@ -58,13 +58,13 @@ namespace le_cantine
         {
             if (dataGridViewUsers.SelectedRows.Count > 0)
             {
-                string id = dataGridViewUsers.SelectedRows[0].Cells["Id_Utilisateur"].Value.ToString();
+                string Id_Utilisateur = dataGridViewUsers.SelectedRows[0].Cells["Id_Utilisateur"].Value.ToString();
                 string nom = dataGridViewUsers.SelectedRows[0].Cells["Nom"].Value.ToString();
                 string email = dataGridViewUsers.SelectedRows[0].Cells["Email"].Value.ToString();
                 string mdp = dataGridViewUsers.SelectedRows[0].Cells["MotDePasse"].Value.ToString();
                 string role = dataGridViewUsers.SelectedRows[0].Cells["Role"].Value.ToString();
 
-                BDD.UpdateUser(id, nom, email, mdp, role);
+                Utilisateur.UpdateUser(Id_Utilisateur, nom, email, mdp, role);
                 MessageBox.Show("Utilisateur mis à jour !");
                 LoadUsers(); // Recharge les données
             }
@@ -112,14 +112,14 @@ namespace le_cantine
             }
 
             // Vérifier si l'utilisateur existe déjà
-            if (BDD.UserExistDeja(email, motDePasse))
+            if (Utilisateur.UserExistDeja(email, motDePasse))
             {
                 MessageBox.Show("Cet utilisateur existe déjà.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             // Ajouter l'utilisateur
-            int result = BDD.CreateUser(nom, motDePasse, email, role);
+            int result = Utilisateur.CreateUser(nom, motDePasse, email, role);
 
             if (result > 0)
             {
