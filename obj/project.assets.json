@@ -1614,11 +1614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ludor\\source\\repos\\le_cantine\\le_cantine\\le_cantine.csproj",
+      "projectUniqueName": "C:\\Users\\ludor\\OneDrive\\Bureau\\BTS SIO\\SIO 2\\Spe SLAM\\le_cantine\\le_cantine\\le_cantine.csproj",
       "projectName": "le_cantine",
-      "projectPath": "C:\\Users\\ludor\\source\\repos\\le_cantine\\le_cantine\\le_cantine.csproj",
+      "projectPath": "C:\\Users\\ludor\\OneDrive\\Bureau\\BTS SIO\\SIO 2\\Spe SLAM\\le_cantine\\le_cantine\\le_cantine.csproj",
       "packagesPath": "C:\\Users\\ludor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ludor\\source\\repos\\le_cantine\\le_cantine\\obj\\",
+      "outputPath": "C:\\Users\\ludor\\OneDrive\\Bureau\\BTS SIO\\SIO 2\\Spe SLAM\\le_cantine\\le_cantine\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
