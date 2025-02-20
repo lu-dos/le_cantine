@@ -56,6 +56,15 @@ namespace le_cantine
 
         private void Connexion_Load(object sender, EventArgs e)
         {
+            // Cacher les mots de passe avec des points (•)
+            TxtBxMotDePasse.PasswordChar = '•';  // Utilise des points (•) pour masquer le mot de passe
+            //confirm_pass.PasswordChar = '•';  // Utilise des points (•) pour masquer la confirmation du mot de passe
+        }
+
+
+
+        private void TxtBxMotDePasse_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

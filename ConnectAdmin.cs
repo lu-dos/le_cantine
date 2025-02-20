@@ -232,5 +232,10 @@ namespace le_cantine
 
 
         }
+
+        private void btnModifierCommandes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

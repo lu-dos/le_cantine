@@ -66,6 +66,7 @@ namespace le_cantine
                     return -10;
                 }
             }
+
             public static DataTable ExecuteSelectToDataTable(string query)
             {
                 OpenConnection();

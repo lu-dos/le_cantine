@@ -44,18 +44,18 @@
             // 
             LblInscrpition.AutoSize = true;
             LblInscrpition.Font = new Font("Showcard Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblInscrpition.Location = new Point(311, 28);
+            LblInscrpition.Location = new Point(272, 21);
             LblInscrpition.Name = "LblInscrpition";
-            LblInscrpition.Size = new Size(400, 74);
+            LblInscrpition.Size = new Size(325, 60);
             LblInscrpition.TabIndex = 1;
             LblInscrpition.Text = "Inscription";
             // 
             // LblEmail
             // 
             LblEmail.AutoSize = true;
-            LblEmail.Location = new Point(402, 241);
+            LblEmail.Location = new Point(352, 181);
             LblEmail.Name = "LblEmail";
-            LblEmail.Size = new Size(46, 20);
+            LblEmail.Size = new Size(36, 15);
             LblEmail.TabIndex = 2;
             LblEmail.Text = "Email";
             LblEmail.Click += LblEmail_Click;
@@ -63,66 +63,72 @@
             // LblMdp
             // 
             LblMdp.AutoSize = true;
-            LblMdp.Location = new Point(350, 299);
+            LblMdp.Location = new Point(306, 224);
             LblMdp.Name = "LblMdp";
-            LblMdp.Size = new Size(98, 20);
+            LblMdp.Size = new Size(78, 15);
             LblMdp.TabIndex = 3;
             LblMdp.Text = "Mot De Passe";
             // 
             // LblNom
             // 
             LblNom.AutoSize = true;
-            LblNom.Location = new Point(406, 181);
+            LblNom.Location = new Point(355, 136);
             LblNom.Name = "LblNom";
-            LblNom.Size = new Size(42, 20);
+            LblNom.Size = new Size(34, 15);
             LblNom.TabIndex = 4;
             LblNom.Text = "Nom";
             // 
             // LblGrade
             // 
             LblGrade.AutoSize = true;
-            LblGrade.Location = new Point(399, 361);
+            LblGrade.Location = new Point(349, 271);
             LblGrade.Name = "LblGrade";
-            LblGrade.Size = new Size(49, 20);
+            LblGrade.Size = new Size(38, 15);
             LblGrade.TabIndex = 5;
             LblGrade.Text = "Grade";
             // 
             // TxtbNom
             // 
-            TxtbNom.Location = new Point(547, 179);
+            TxtbNom.Location = new Point(479, 134);
+            TxtbNom.Margin = new Padding(3, 2, 3, 2);
             TxtbNom.Name = "TxtbNom";
-            TxtbNom.Size = new Size(125, 27);
+            TxtbNom.Size = new Size(110, 23);
             TxtbNom.TabIndex = 6;
             TxtbNom.TextChanged += TxtbNom_TextChanged;
             // 
             // TxtbEmail
             // 
-            TxtbEmail.Location = new Point(547, 237);
+            TxtbEmail.Location = new Point(479, 178);
+            TxtbEmail.Margin = new Padding(3, 2, 3, 2);
             TxtbEmail.Name = "TxtbEmail";
-            TxtbEmail.Size = new Size(125, 27);
+            TxtbEmail.Size = new Size(110, 23);
             TxtbEmail.TabIndex = 7;
             // 
             // TxtbMdp
             // 
-            TxtbMdp.Location = new Point(547, 296);
+            TxtbMdp.Location = new Point(479, 222);
+            TxtbMdp.Margin = new Padding(3, 2, 3, 2);
             TxtbMdp.Name = "TxtbMdp";
-            TxtbMdp.Size = new Size(125, 27);
+            TxtbMdp.Size = new Size(110, 23);
             TxtbMdp.TabIndex = 8;
+            TxtbMdp.TextChanged += TxtbMdp_TextChanged;
             // 
             // CbGrade
             // 
             CbGrade.FormattingEnabled = true;
             CbGrade.Items.AddRange(new object[] { "Admin", "User" });
-            CbGrade.Location = new Point(547, 357);
+            CbGrade.Location = new Point(479, 268);
+            CbGrade.Margin = new Padding(3, 2, 3, 2);
             CbGrade.Name = "CbGrade";
-            CbGrade.Size = new Size(151, 28);
+            CbGrade.Size = new Size(133, 23);
             CbGrade.TabIndex = 9;
             // 
             // BtnValider
             // 
-            BtnValider.Location = new Point(417, 453);
+            BtnValider.Location = new Point(365, 340);
+            BtnValider.Margin = new Padding(3, 2, 3, 2);
             BtnValider.Name = "BtnValider";
-            BtnValider.Size = new Size(194, 87);
+            BtnValider.Size = new Size(170, 65);
             BtnValider.TabIndex = 10;
             BtnValider.Text = "Valider";
             BtnValider.UseVisualStyleBackColor = true;
@@ -130,9 +136,9 @@
             // 
             // Inscription
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(993, 577);
+            ClientSize = new Size(869, 433);
             Controls.Add(BtnValider);
             Controls.Add(CbGrade);
             Controls.Add(TxtbMdp);
@@ -143,6 +149,7 @@
             Controls.Add(LblMdp);
             Controls.Add(LblEmail);
             Controls.Add(LblInscrpition);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Inscription";
             Text = "Inscription";
             Load += Inscription_Load;

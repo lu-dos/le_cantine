@@ -63,6 +63,11 @@ namespace le_cantine
 
         private void Inscription_Load(object sender, EventArgs e)
         {
+            TxtbMdp.PasswordChar = '•';  // Utilise des points (•) pour masquer le mot de passe
+        }
+
+        private void TxtbMdp_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
