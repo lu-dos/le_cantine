@@ -41,14 +41,15 @@
             dataGridViewTables = new DataGridView();
             TabCommandes = new TabPage();
             btnModifierCommandes = new Button();
-            dataGridView1 = new DataGridView();
+            dataGridCommandes = new DataGridView();
+            BtnAjtCommande = new Button();
             tabControl1.SuspendLayout();
             TabModifUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewUsers).BeginInit();
             TabReserv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTables).BeginInit();
             TabCommandes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridCommandes).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -58,11 +59,10 @@
             tabControl1.Controls.Add(TabCommandes);
             tabControl1.Font = new Font("Showcard Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tabControl1.Location = new Point(0, 0);
-            tabControl1.Margin = new Padding(3, 2, 3, 2);
             tabControl1.Name = "tabControl1";
             tabControl1.RightToLeft = RightToLeft.No;
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1140, 536);
+            tabControl1.Size = new Size(1303, 715);
             tabControl1.TabIndex = 0;
             // 
             // TabModifUser
@@ -72,11 +72,10 @@
             TabModifUser.Controls.Add(btnModifierUser);
             TabModifUser.Controls.Add(dataGridViewUsers);
             TabModifUser.Font = new Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TabModifUser.Location = new Point(4, 32);
-            TabModifUser.Margin = new Padding(3, 2, 3, 2);
+            TabModifUser.Location = new Point(4, 38);
             TabModifUser.Name = "TabModifUser";
-            TabModifUser.Padding = new Padding(3, 2, 3, 2);
-            TabModifUser.Size = new Size(1132, 500);
+            TabModifUser.Padding = new Padding(3);
+            TabModifUser.Size = new Size(1295, 673);
             TabModifUser.TabIndex = 0;
             TabModifUser.Text = "Gestion des utilisateurs";
             TabModifUser.UseVisualStyleBackColor = true;
@@ -85,10 +84,9 @@
             // btnAjouterUser
             // 
             btnAjouterUser.BackColor = Color.GreenYellow;
-            btnAjouterUser.Location = new Point(882, 194);
-            btnAjouterUser.Margin = new Padding(3, 2, 3, 2);
+            btnAjouterUser.Location = new Point(1008, 259);
             btnAjouterUser.Name = "btnAjouterUser";
-            btnAjouterUser.Size = new Size(129, 62);
+            btnAjouterUser.Size = new Size(147, 83);
             btnAjouterUser.TabIndex = 3;
             btnAjouterUser.Text = "Ajouter";
             btnAjouterUser.UseVisualStyleBackColor = false;
@@ -97,10 +95,9 @@
             // btnSupprimerUser
             // 
             btnSupprimerUser.BackColor = Color.Red;
-            btnSupprimerUser.Location = new Point(882, 115);
-            btnSupprimerUser.Margin = new Padding(3, 2, 3, 2);
+            btnSupprimerUser.Location = new Point(1008, 153);
             btnSupprimerUser.Name = "btnSupprimerUser";
-            btnSupprimerUser.Size = new Size(129, 62);
+            btnSupprimerUser.Size = new Size(147, 83);
             btnSupprimerUser.TabIndex = 2;
             btnSupprimerUser.Text = "Supprimer";
             btnSupprimerUser.UseVisualStyleBackColor = false;
@@ -109,10 +106,9 @@
             // btnModifierUser
             // 
             btnModifierUser.BackColor = Color.SandyBrown;
-            btnModifierUser.Location = new Point(882, 35);
-            btnModifierUser.Margin = new Padding(3, 2, 3, 2);
+            btnModifierUser.Location = new Point(1008, 47);
             btnModifierUser.Name = "btnModifierUser";
-            btnModifierUser.Size = new Size(129, 62);
+            btnModifierUser.Size = new Size(147, 83);
             btnModifierUser.TabIndex = 1;
             btnModifierUser.Text = "Modifier";
             btnModifierUser.UseVisualStyleBackColor = false;
@@ -122,11 +118,10 @@
             // 
             dataGridViewUsers.AllowUserToOrderColumns = true;
             dataGridViewUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewUsers.Location = new Point(7, 4);
-            dataGridViewUsers.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewUsers.Location = new Point(8, 5);
             dataGridViewUsers.Name = "dataGridViewUsers";
             dataGridViewUsers.RowHeadersWidth = 51;
-            dataGridViewUsers.Size = new Size(815, 494);
+            dataGridViewUsers.Size = new Size(931, 659);
             dataGridViewUsers.TabIndex = 0;
             dataGridViewUsers.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -136,11 +131,10 @@
             TabReserv.Controls.Add(btnSupprimerTable);
             TabReserv.Controls.Add(btnModifierTable);
             TabReserv.Controls.Add(dataGridViewTables);
-            TabReserv.Location = new Point(4, 32);
-            TabReserv.Margin = new Padding(3, 2, 3, 2);
+            TabReserv.Location = new Point(4, 38);
             TabReserv.Name = "TabReserv";
-            TabReserv.Padding = new Padding(3, 2, 3, 2);
-            TabReserv.Size = new Size(1132, 500);
+            TabReserv.Padding = new Padding(3);
+            TabReserv.Size = new Size(1295, 673);
             TabReserv.TabIndex = 1;
             TabReserv.Text = "Gestion des Tables";
             TabReserv.UseVisualStyleBackColor = true;
@@ -150,10 +144,9 @@
             // 
             btnAjouterTable.BackColor = Color.GreenYellow;
             btnAjouterTable.Font = new Font("Arial Narrow", 13.8F);
-            btnAjouterTable.Location = new Point(914, 234);
-            btnAjouterTable.Margin = new Padding(3, 2, 3, 2);
+            btnAjouterTable.Location = new Point(1045, 312);
             btnAjouterTable.Name = "btnAjouterTable";
-            btnAjouterTable.Size = new Size(136, 65);
+            btnAjouterTable.Size = new Size(155, 87);
             btnAjouterTable.TabIndex = 3;
             btnAjouterTable.Text = "Ajouter";
             btnAjouterTable.UseVisualStyleBackColor = false;
@@ -163,10 +156,9 @@
             // 
             btnSupprimerTable.BackColor = Color.Red;
             btnSupprimerTable.Font = new Font("Arial Narrow", 13.8F);
-            btnSupprimerTable.Location = new Point(914, 128);
-            btnSupprimerTable.Margin = new Padding(3, 2, 3, 2);
+            btnSupprimerTable.Location = new Point(1045, 171);
             btnSupprimerTable.Name = "btnSupprimerTable";
-            btnSupprimerTable.Size = new Size(136, 65);
+            btnSupprimerTable.Size = new Size(155, 87);
             btnSupprimerTable.TabIndex = 2;
             btnSupprimerTable.Text = "Supprimer";
             btnSupprimerTable.UseVisualStyleBackColor = false;
@@ -176,10 +168,9 @@
             // 
             btnModifierTable.BackColor = Color.SandyBrown;
             btnModifierTable.Font = new Font("Arial Narrow", 13.8F);
-            btnModifierTable.Location = new Point(914, 23);
-            btnModifierTable.Margin = new Padding(3, 2, 3, 2);
+            btnModifierTable.Location = new Point(1045, 31);
             btnModifierTable.Name = "btnModifierTable";
-            btnModifierTable.Size = new Size(136, 65);
+            btnModifierTable.Size = new Size(155, 87);
             btnModifierTable.TabIndex = 1;
             btnModifierTable.Text = "Modifier";
             btnModifierTable.UseVisualStyleBackColor = false;
@@ -188,23 +179,22 @@
             // dataGridViewTables
             // 
             dataGridViewTables.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewTables.Location = new Point(5, 4);
-            dataGridViewTables.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewTables.Location = new Point(6, 5);
             dataGridViewTables.Name = "dataGridViewTables";
             dataGridViewTables.RowHeadersWidth = 51;
-            dataGridViewTables.Size = new Size(824, 470);
+            dataGridViewTables.Size = new Size(942, 627);
             dataGridViewTables.TabIndex = 0;
             dataGridViewTables.CellContentClick += dataGridViewTables_CellContentClick;
             // 
             // TabCommandes
             // 
+            TabCommandes.Controls.Add(BtnAjtCommande);
             TabCommandes.Controls.Add(btnModifierCommandes);
-            TabCommandes.Controls.Add(dataGridView1);
-            TabCommandes.Location = new Point(4, 32);
-            TabCommandes.Margin = new Padding(3, 2, 3, 2);
+            TabCommandes.Controls.Add(dataGridCommandes);
+            TabCommandes.Location = new Point(4, 38);
             TabCommandes.Name = "TabCommandes";
-            TabCommandes.Padding = new Padding(3, 2, 3, 2);
-            TabCommandes.Size = new Size(1132, 500);
+            TabCommandes.Padding = new Padding(3);
+            TabCommandes.Size = new Size(1295, 673);
             TabCommandes.TabIndex = 2;
             TabCommandes.Text = "Commandes";
             TabCommandes.UseVisualStyleBackColor = true;
@@ -213,32 +203,42 @@
             // 
             btnModifierCommandes.BackColor = Color.Orange;
             btnModifierCommandes.Font = new Font("Arial Narrow", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnModifierCommandes.Location = new Point(917, 50);
-            btnModifierCommandes.Margin = new Padding(3, 2, 3, 2);
+            btnModifierCommandes.Location = new Point(1048, 67);
             btnModifierCommandes.Name = "btnModifierCommandes";
-            btnModifierCommandes.Size = new Size(114, 51);
+            btnModifierCommandes.Size = new Size(130, 68);
             btnModifierCommandes.TabIndex = 1;
             btnModifierCommandes.Text = "Modifier";
             btnModifierCommandes.UseVisualStyleBackColor = false;
             btnModifierCommandes.Click += btnModifierCommandes_Click;
             // 
-            // dataGridView1
+            // dataGridCommandes
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(5, 4);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(823, 494);
-            dataGridView1.TabIndex = 0;
+            dataGridCommandes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridCommandes.Location = new Point(6, 5);
+            dataGridCommandes.Name = "dataGridCommandes";
+            dataGridCommandes.RowHeadersWidth = 51;
+            dataGridCommandes.Size = new Size(941, 659);
+            dataGridCommandes.TabIndex = 0;
+            dataGridCommandes.CellContentClick += dataGridCommandes_CellContentClick;
+            // 
+            // BtnAjtCommande
+            // 
+            BtnAjtCommande.BackColor = Color.GreenYellow;
+            BtnAjtCommande.Font = new Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnAjtCommande.Location = new Point(1048, 174);
+            BtnAjtCommande.Name = "BtnAjtCommande";
+            BtnAjtCommande.Size = new Size(130, 68);
+            BtnAjtCommande.TabIndex = 2;
+            BtnAjtCommande.Text = "Ajouter";
+            BtnAjtCommande.UseVisualStyleBackColor = false;
+            BtnAjtCommande.Click += BtnAjtCommande_Click;
             // 
             // ConnectAdmin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1141, 536);
+            ClientSize = new Size(1304, 715);
             Controls.Add(tabControl1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "ConnectAdmin";
             Text = "ConnectAdmin";
             Load += ConnectAdmin_Load;
@@ -248,7 +248,7 @@
             TabReserv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewTables).EndInit();
             TabCommandes.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridCommandes).EndInit();
             ResumeLayout(false);
         }
 
@@ -266,7 +266,8 @@
         private Button btnModifierTable;
         private Button btnSupprimerTable;
         private Button btnAjouterTable;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridCommandes;
         private Button btnModifierCommandes;
+        private Button BtnAjtCommande;
     }
 }

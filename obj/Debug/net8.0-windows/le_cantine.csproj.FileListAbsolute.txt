@@ -37,3 +37,42 @@ C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_ca
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.ConnectUser.resources
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.Properties.Resources.resources
 C:\Users\ludor\source\repos\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.sourcelink.json
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\le_cantine.exe
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\le_cantine.deps.json
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\le_cantine.runtimeconfig.json
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\le_cantine.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\le_cantine.pdb
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.csproj.AssemblyReference.cache
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.ConnectAdmin.resources
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.ConnectUser.resources
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.Connexion.resources
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.Inscription.resources
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.Properties.Resources.resources
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.csproj.GenerateResource.cache
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.AssemblyInfoInputs.cache
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.AssemblyInfo.cs
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.csproj.CoreCompileInputs.cache
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.sourcelink.json
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.csproj.Up2Date
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\refint\le_cantine.dll
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.pdb
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\le_cantine.genruntimeconfig.cache
+C:\Users\ludor\OneDrive\Bureau\BTS SIO\SIO 2\Spe SLAM\le_cantine\le_cantine\obj\Debug\net8.0-windows\ref\le_cantine.dll

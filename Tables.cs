@@ -2,6 +2,7 @@
 using Org.BouncyCastle.Asn1.Ocsp;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,12 @@ namespace le_cantine
 {
     internal class Tables
     {
+        public static DataTable GetAllTables()
+        {
+            return BDD.SelectDatatable("SELECT Id_Table, Numero, Capapcite, Statut FROM Tables");
+        }
+
+
 
         public static int CreateTable(string numero, string capacite, string statut)
         {

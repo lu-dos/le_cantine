@@ -127,11 +127,5 @@ namespace le_cantine
             maConnexion.Close();
             return dt;
         }
-
-
-        public static DataTable GetAllTables()
-        {
-            return SelectDatatable("SELECT Id_Table, Numero, Capapcite, Statut FROM Tables");
-        }
     }
 }
