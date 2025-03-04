@@ -45,9 +45,7 @@ namespace le_cantine
 
         }
 
-
-        /////////////////////// PARTIE UTILISATEURS ////////////////////////////////
-
+        #region partie utilisateur
         private void LoadUsers()
         {
             try
@@ -61,8 +59,10 @@ namespace le_cantine
             }
         }
 
+        #endregion
 
-        //////////// PARTIE BOUTONS ///////////
+
+        #region partie boutons utilisateurs
 
         private void btnModifierUser_Click(object sender, EventArgs e)
         {
@@ -142,8 +142,10 @@ namespace le_cantine
                 MessageBox.Show("Erreur lors de l'ajout de l'utilisateur.");
             }
         }
+        #endregion
 
-        /////////////////////// PARTIE TABLES ////////////////////////////////
+
+        #region partie tables
         private void dataGridViewTables_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -162,7 +164,10 @@ namespace le_cantine
             }
         }
 
-        //////////// PARTIE BOUTONS ///////////
+        #endregion
+
+
+        #region partie boutons tables
 
         private void btnModifierTable_Click(object sender, EventArgs e)
         {
@@ -244,8 +249,10 @@ namespace le_cantine
                 }
             }
         }
+        #endregion
 
-        /////////////////////// PARTIE COMMANDES ////////////////////////////////
+
+        #region partie commande
         private void dataGridCommandes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -263,8 +270,9 @@ namespace le_cantine
                 MessageBox.Show("Erreur lors du chargement des tables : " + ex.Message);
             }
         }
+        #endregion
 
-        //////////// PARTIE BOUTONS ///////////
+        #region partie boutons commande
 
         private void btnModifierCommandes_Click(object sender, EventArgs e)
         {
@@ -318,61 +326,43 @@ namespace le_cantine
 
 
 
-
-
-
-
-
-
         private void BtnAjtCommande_Click(object sender, EventArgs e)
         {
+            // Demander les informations à l'utilisateur
+            string dateCommandeStr = Microsoft.VisualBasic.Interaction.InputBox("Entrez la date de la commande (jj/mm/aaaa) :", "Ajouter Commande", DateTime.Now.ToString("dd/MM/yyyy"));
+            string prix = Microsoft.VisualBasic.Interaction.InputBox("Entrez le prix total :", "Ajouter Commande", "0");
+            string id_utilisateur = Microsoft.VisualBasic.Interaction.InputBox("Entrez l'ID de l'utilisateur :", "Ajouter Commande", "");
+            string id_table = Microsoft.VisualBasic.Interaction.InputBox("Entrez l'ID de la table :", "Ajouter Commande", "");
+
+            // Vérification des champs vides
+            if (string.IsNullOrWhiteSpace(dateCommandeStr) || string.IsNullOrWhiteSpace(prix) || string.IsNullOrWhiteSpace(id_utilisateur) || string.IsNullOrWhiteSpace(id_table))
             {
-                // Boîte de dialogue pour entrer les informations
-
-                object valeurDate = Microsoft.VisualBasic.Interaction.InputBox("1Date de commande (jj/mm/aaaa) : ", "Ajouter la date de commande", "");
-                string prix = Microsoft.VisualBasic.Interaction.InputBox("prix :", "prix", "");
-                
-                DateTime date_commande;
-
-                // Vérifier et convertir la date
-                if (valeurDate != null && DateTime.TryParse(valeurDate.ToString(), out date_commande))
-                {
-                    // Afficher l'InputBox avec la date formatée
-                    string inputDate = Microsoft.VisualBasic.Interaction.InputBox("2Modifier la date (jj/mm/aaaa)ZQDQDQZ :", "3Modifier Date", date_commande.ToString("4dd/MM/yyyy"));
-
-                    // Vérifier et convertir la nouvelle date entrée
-                    if (!DateTime.TryParse(inputDate, out date_commande))
-                    {
-                        MessageBox.Show("5Date invalide. Veuillez entrer une date valide au format jj/mm/aaaa.");
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Erreur lors de la récupération de la date.");
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(prix))
-                {
-                    MessageBox.Show("Tous les champs doivent être remplis.");
-                    return;
-                }
-
-
-                // Ajout dans Commandes.cs
-                int result = Commandes.CreateCommande(date_commande.ToString("yyyy-MM-dd"), prix);
-
-                if (result > 0)
-                {
-                    MessageBox.Show("Table ajoutée avec succès !");
-                    LoadTables(); // Recharge les données
-                }
-                else
-                {
-                    MessageBox.Show("Erreur lors de l'ajout de la table.");
-                }
+                MessageBox.Show("Tous les champs doivent être remplis.");
+                return;
             }
+
+            // Conversion des valeurs
+            DateTime dateCommande;
+            if (!DateTime.TryParse(dateCommandeStr, out dateCommande))
+            {
+                MessageBox.Show("Format de date invalide. Veuillez entrer une date valide au format jj/mm/aaaa.");
+                return;
+            }
+
+            // Vérifier si le prix est un nombre valide
+            if (!decimal.TryParse(prix, out decimal prixTotal))
+            {
+                MessageBox.Show("Le prix doit être un nombre valide.");
+                return;
+            }
+
+            // Appel à la méthode d'ajout
+            Commandes.CreateCommande(dateCommande.ToString("yyyy-MM-dd"), prixTotal.ToString() , id_utilisateur , id_table);
+
+            MessageBox.Show("Commande ajoutée avec succès !");
+            LoadCommande(); // Recharger les données pour voir la nouvelle commande
         }
+        #endregion
+
     }
 }

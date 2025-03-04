@@ -21,9 +21,9 @@ namespace le_cantine
 
             BDD.ExecuteQuery(requete);
         }
-        public static int CreateCommande(string Date_Commande, string Prix_Total)
+        public static int CreateCommande(string Date_Commande, string Prix_Total, string id_utilisateur , string id_table)
         {
-            string requete = $"INSERT INTO commande (Date_Commande, Prix_Total) VALUES '{Date_Commande}', '{Prix_Total}')";
+            string requete = $"INSERT INTO commande (Date_Commande, Prix_Total, id_utilisateur , id_table) VALUES '{Date_Commande}', '{Prix_Total}' , '{id_utilisateur}' , '{id_table}')";
             int result = BDD.ExecuteQuery(requete);
             return result;
         }
