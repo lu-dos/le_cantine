@@ -1,5 +1,7 @@
 # Le Cantine
 
+[📝 Présentation du projet](docs/Presentation.md)
+
 This repository contains a WinForms application targeting **.NET 8**. The project uses a MySQL database and requires the `MySql.Data` library.
 
 ## Building and Running
